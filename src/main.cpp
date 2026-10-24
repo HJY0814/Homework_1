@@ -7,11 +7,12 @@ int main() {
     std::cout << ">>> ";
     std::cin >> d;
     const Angle angle;
+    const double PI = 3.14159265358979323846;
 
     if (double theta_reg = 0.0; d != 0 && angle.solver(d, theta_reg)) {
         std::cout << "目标：击中同一水平线上相距" << d << "米处的目标" << std::endl;
         std::cout << "（弧度制）抬升角：" << theta_reg << std::endl;
-        const double theta_deg = theta_reg * 180 / std::numbers::pi;
+        const double theta_deg = theta_reg * 180 / PI;
         std::cout << "（角度制）抬升角：" << theta_deg << "°" << std::endl;
     } else {
         std::cout << "无解" << std::endl;
