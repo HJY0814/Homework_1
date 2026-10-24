@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-
 #include "../include/Angle.hpp"
 
 int main() {
